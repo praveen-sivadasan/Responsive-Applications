@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="css/vendor/foundation-6.2.3.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="icons/foundation/foundation-icons.css"/>
+    <!--<link rel="icon" type="image/ico" href="img/favicon.ico"/>-->
+</head>
+<body>
+
+<div class="search-page-container top-bar">
+    <div class="top-bar-left">
+        <div class="show-for-small-only">
+            <button class="menu-icon" data-toggle="left-sidebar"></button>
+        </div>
+    </div>
+    <div class="top-bar-center">
+        <span class="title">
+            Responsive Page
+        </span>
+    </div>
+    <div class="top-bar-right">
+        <div class="show-for-small-only">
+            <button class="menu-icon" data-toggle="right-sidebar"></button>
+        </div>
+    </div>
+</div>
+
+<button data-toggle="right-sidebar" id="sidebar-btn"
+        class="show-for-medium-only">
+    <span style="font-size: 23px;color: white;font-family: cursive;"> << </span>
+</button>
+
+<div class="main-content" style="position: relative;">
+    <div id="sideBar">
+        <!-- Left side bar for mobile devices -->
+        <div class="left-sidebar show-for-small-only" id="left-sidebar" data-toggler=".is-active-lsidebar">
+            <div class="left-sidebar-panel" id="left-sidebar-panel">
+                <div class="tabs-header" style="padding-bottom: 0;margin-top:5px;height: 53px;">
+                    <div style="width: 70%;display: inline-block;float: left;position: relative;top: 9px;">
+                        Menu
+                    </div>
+                    <div style="width: 25%;display: inline-block;">
+                        <button class=" mob-button" data-toggle="left-sidebar" id="left-close-sidebar"
+                                style="float: right;position: relative;top: -11px;">
+                            <i class="fi-x-circle" style="font-size: 30px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <ul class="tabs vertical">
+                        <li class="tabs-title"><a href="" class="tab1">Tab1</a></li>
+                        <li class="tabs-title"><a href="" class="tab2">Tab2</a></li>
+                        <li class="tabs-title"><a href="" class="tab3">Tab3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mainPanel" class="row collapse">
+        <div class="large-2 medium-3 columns hide-for-small-only" id="flowConfig">
+            <div class="tabs-header">
+                Menu
+            </div>
+            <ul class="tabs vertical" id="tabs-vertical" data-tabs>
+                <li class="tabs-title dmenu "><a href="" class="tab1">Tab1</a></li>
+                <li class="tabs-title"><a href="" class="tab2">Tab2</a></li>
+                <li class="tabs-title dmenu "><a href="" class="tab3">Tab3</a></li>
+            </ul>
+        </div>
+        <!-- main content for large device -->
+        <div id="container" class="large-7 medium-8 small-12 columns">
+            <div class="tabs-content vertical" data-tabs-content="tabs-vertical"
+                 style="width: 100%;margin-bottom: 7px;">
+                <div class="tabs-panel" id="tab1">
+                </div>
+                <div class="tabs-panel" id="tab2">
+                </div>
+                <div class="tabs-panel" id="tab3">
+                </div>
+            </div>
+            <div class="">
+                <div style="text-align: center;">
+                    <button type="button" class="simulateButton alert small button" style="margin: 0px">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side bar for tablet devices -->
+        <div class="right-sidebar large-3 columns" id="right-sidebar" data-toggler=".is-active-rsidebar">
+            <div class="right-sidebar-panel" id="right-sidebar-panel">
+                <div class="tabs-panel right-tab-panel">
+                    <div class="tabs-panel-section">
+                        <div id="common-panel" class="tabs-panel-content" style="padding-top: 0px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search-page-container foot-bar show-for-medium">
+    © 2016 Praveen - All rights reserved
+</div>
+
+<script type="text/javascript" src="js/vendor/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="js/vendor/foundation-6.2.3.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
+
+
+

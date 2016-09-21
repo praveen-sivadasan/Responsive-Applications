@@ -1,0 +1,61 @@
+<div id="commonConfigPanel">
+    <div class="configPanel">
+        <div class="tabs-header" style="margin-top: 15px;border-bottom: 0px;text-align: center;"
+             title="Note, common technical configuration parameters and their associated values are for advanced usage only.  Please verify before updating or making any changes.">
+            <div style="width: 100%;">
+                <button class="mob-button show-for-small-only" id="right-close-sidebar" style="float: right;position: relative;top: -11px;">
+                    <i class="fi-x-circle" style="font-size: 30px;"></i>
+                </button>
+            </div>
+            <div style="width: 100%;text-align: center">
+                <i class="fi-widget" style="font-size: 20px;"></i>
+                 Configuration
+            </div>
+        </div>
+
+        <div id="commonConfigurationData" class="ToggleOff">
+            <div class="sub-header" style="padding-top: 4px;padding-bottom: 4px;">
+                Webapp configuration
+            </div>
+            <div style="padding-bottom: 10px;background-color: whitesmoke;">
+                <table id="serverSelection" class="panelTable">
+                    <tr>
+                        <td>
+                            <table class="webappConfig">
+                                <tr>
+                                    <td>Server</td>
+                                    <td>
+                                        <select>
+                                            <option selected="selected" value="dev">Dev</option>
+                                            <option value="qa">Qa</option>
+                                            <option value="staging">Staging</option>
+                                            <option value="prod">Prod</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Port</td>
+                                    <td>
+                                        <input name="port"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" class="button small config-button" style="background-color:#d5152e">Submit</a>
+        </div>
+    </div>
+</div>
+<script>
+    /*Common config panel js*/
+    $('#right-close-sidebar').click(function () {
+        $('#right-sidebar').removeClass('is-active-rsidebar');
+        $('#right-sidebar').hide();
+        $('#sidebar-btn').css('right', '0px');
+        $('#right-sidebar-panel').css("margin-right", '-' + $('.right-sidebar-panel').css('width'));
+    });
+</script>
