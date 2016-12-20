@@ -1,2 +1,2 @@
-###### Responsive applications created using latest css frameworks:
+## Responsive applications created using latest css frameworks:
 - Foundation 6
