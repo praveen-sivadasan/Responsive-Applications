@@ -6,7 +6,7 @@ A responsive web page developed to interact with server.
 
 Technology 
 -----------
-Foundation framework, HTML5, CSS3, JQuery
+Foundation 6 framework, HTML5, CSS3, JQuery
 
 Verified mobile devices after testing
 ------------------------------------------
@@ -21,3 +21,6 @@ Browser supported
 Mozila 48.02
 Chrome - Need an application server due to Cross Origin Requests error.    
    
+ScreenShots
+---------------------
+
