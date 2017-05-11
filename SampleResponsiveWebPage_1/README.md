@@ -1,4 +1,4 @@
-**Foundation 6 based mobile-first responsive pages**
+#Foundation 6 based mobile-first responsive pages
 
 Introduction
 ------------
