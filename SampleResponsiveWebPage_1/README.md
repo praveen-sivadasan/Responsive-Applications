@@ -1,4 +1,4 @@
-*** Sample responsive page ***
+**Foundation 6 based mobile-first responsive pages**
 
 Introduction
 ------------
